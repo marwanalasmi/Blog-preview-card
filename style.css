@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "Figtree";
+  src: url("./assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("./assets/fonts/Figtree-Italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+/* إذا تبي ExtraBold و Medium بشكل منفصل */
+@font-face {
+  font-family: "Figtree";
+  src: url("./assets/fonts/Figtree-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("./assets/fonts/Figtree-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f4d04e;
+}
+
+.card {
+  height: 522px;
+  width: 384px;
+  border: 1.5px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 7px 7px;
+  transition: all 0.5s ease-in-out;
+}
+
+.blogImage {
+  border-radius: 35px;
+  padding: 24px;
+  
+}
+
+.badge {
+  font-size: 14px;
+  font-weight: 800;
+  background-color: #f4d04e;
+  padding: 4px 12px;
+  margin: 24px;
+  border-radius: 5px;
+}
+
+.date {
+  font-size: 14px;
+  padding: 12px 24px;
+  margin: 0px;
+  line-height: 1.5;
+}
+
+.title {
+  padding: 0px 24px;
+  margin: 0px;
+  font-size: 24px;
+  line-height: 1.5;
+  transition: all 0.5s ease-in-out;
+}
+
+.description {
+  padding: 0px 24px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #6b6b6b;
+}
+
+.author > img {
+  height: 32px;
+  width: 32px;
+  margin-left: 24px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 800;
+}
+
+.card:hover {
+  box-shadow: 15px 15px;
+  transform: translate(-2px, -2px);
+  cursor: pointer;
+}
+
+.card:hover .title {
+  color: #f4d04e;
+}
