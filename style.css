@@ -33,6 +33,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   height: 100vh;
   background-color: #f4d04e;
 }
@@ -109,4 +110,19 @@ body {
 
 .card:hover .title {
   color: #f4d04e;
+}
+
+
+.attribution{
+  margin-top: 30px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  color: rgb(145, 34, 248);
 }
